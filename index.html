@@ -111,7 +111,15 @@
     <main>
       <article>
         <!-- insert iframe from youtube -->
-
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/ojcNcvb1olg"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
         <h2>Rocking the free web</h2>
 
         <p>
@@ -135,22 +143,41 @@
       <div class="further-info">
         <!-- insert images with srcsets and sizes -->
         <a href="https://www.mozilla.org/en-US/firefox/new/">
-          <img />
+          <img
+            srcset="firefoxlogo120.png 120w"
+            sizes="(max-width: 500px) 120px"
+            src="firefoxlogo400.png"
+            alt="firefoxlogo"
+          />
         </a>
         <a href="https://www.mozilla.org/">
-          <img />
+          <img
+            srcset="mozilladinosaur120.png 120w"
+            sizes="(max-width: 500px) 120px"
+            src="mozilladinosaur400.png"
+            alt="mozilladinosaur"
+          />
         </a>
         <a href="https://addons.mozilla.org/">
-          <img />
+          <img
+            srcset="firefoxaddons120.png 120w"
+            sizes="(max-width: 500px) 120px"
+            src="firefoxaddons400.png"
+            alt="firefoxaddons"
+          />
         </a>
         <a href="https://developer.mozilla.org/en-US/">
-          <img />
+          <img src="mdn.svg" alt="mdn" />
         </a>
         <div class="clearfix"></div>
       </div>
 
       <div class="red-panda">
         <!-- insert picture element -->
+        <picture>
+          <source media="(max-width: 600)" srcset="redpanda600.png" />
+          <img src="redpanda1200.png" alt="redpanda" />
+        </picture>
       </div>
     </main>
   </body>
